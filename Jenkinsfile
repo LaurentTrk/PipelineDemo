@@ -12,7 +12,7 @@ pipeline {
         parallel(
           "Tests": {
             sh 'echo \'Tests\''
-            node(label: 'Salve1') {
+            node(label: 'Slave1') {
               echo 'Hello i\'m a slave'
               sh 'hostname'
             }
